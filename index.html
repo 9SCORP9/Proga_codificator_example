@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Назначение кода объекта морской техники</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Назначение кода объекта морской техники</h2>
+    
+    <div class="select-container">
+        <label for="class">Класс:</label>
+        <select id="class" disabled>
+            <!-- + -->
+        </select>
+    </div>
+
+    <div class="select-container hidden" id="subclass-container">
+        <label for="subclass">Подкласс:</label>
+        <select id="subclass">
+            <!-- + -->
+        </select>
+    </div>
+
+    <div class="select-container hidden" id="group-container">
+        <label for="group">Группа:</label>
+        <select id="group">
+            <!-- + -->
+        </select>
+    </div>
+
+    <div class="select-container hidden" id="subgroup-container">
+        <label for="subgroup">Подгруппа:</label>
+        <select id="subgroup">
+            <!-- + -->
+        </select>
+    </div>
+
+    <div class="select-container hidden" id="type-container">
+        <label for="type">Вид:</label>
+        <select id="type">
+            <!-- + -->
+        </select>
+    </div>
+
+    <div class="select-container hidden" id="category-container">
+        <label for="category">Категория:</label>
+        <select id="category">
+            <!-- + -->
+        </select>
+    </div>
+
+    <div class="select-container hidden" id="subcategory-container">
+        <label for="subcategory">Подкатегория:</label>
+        <select id="subcategory">
+            <!-- + -->
+        </select>
+    </div>
+
+    <div class="result-container">
+        <button id="result-button" disabled>Выбрать код</button>
+        <div id="result-display" class="result-display hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

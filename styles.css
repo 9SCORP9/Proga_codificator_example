@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.select-container {
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+select {
+    width: 500px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+select:disabled {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Стили для отображения иерархии */
+option {
+    padding: 5px;
+}
+
+/* Отступы для визуального отображения вложенности */
+option.level-1 { padding-left: 10px; }
+option.level-2 { padding-left: 20px; }
+option.level-3 { padding-left: 30px; }
+option.level-4 { padding-left: 40px; }
+option.level-5 { padding-left: 50px; }
+option.level-6 { padding-left: 60px; }
+
+/* Стили для кнопки и результата */
+.result-container {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+#result-button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#result-button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+#result-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.result-display {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.result-display:not(.hidden) {
+    display: block;
+}
